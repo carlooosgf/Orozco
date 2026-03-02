@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Manrope:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* === JOYERÍAS OROZCO — LUXURY DESIGN SYSTEM === */
+
+    /* Primary: Carbon black for elegance */
+    --primary: 0 0% 8%;
+    --primary-foreground: 40 20% 97%;
+
+    /* Background: Warm white with slight ivory undertone */
+    --background: 40 33% 99%;
+    --foreground: 0 0% 12%;
+
+    /* Card */
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 12%;
+
+    /* Popover */
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 12%;
+
+    /* Secondary: Warm light gray */
+    --secondary: 35 15% 95%;
+    --secondary-foreground: 0 0% 12%;
+
+    /* Muted: Soft warm gray */
+    --muted: 30 12% 95%;
+    --muted-foreground: 25 5% 45%;
+
+    /* Accent: Subtle gold */
+    --accent: 38 55% 58%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Gold tokens for luxury jewelry accents */
+    --gold: 38 55% 58%;
+    --gold-light: 38 45% 85%;
+    --gold-dark: 38 45% 38%;
+    --gold-muted: 38 20% 72%;
+
+    /* Pandora brand pink */
+    --pandora: 340 30% 55%;
+    --pandora-light: 340 40% 96%;
+    --pandora-foreground: 0 0% 100%;
+
+    /* State colors */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --success: 152 50% 42%;
+    --warning: 38 92% 50%;
+
+    /* Borders and inputs */
+    --border: 30 15% 90%;
+    --input: 30 15% 90%;
+    --ring: 38 55% 58%;
+
+    /* Radius */
+    --radius: 0.5rem;
+
+    /* Chart colors */
+    --chart-1: 38 55% 58%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+
+    /* === CUSTOM LUXURY TOKENS === */
+
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -4px hsl(30 15% 50% / 0.12);
+    --shadow-elegant: 0 12px 40px -12px hsl(38 55% 58% / 0.15);
+    --shadow-card: 0 2px 12px -2px hsl(30 15% 50% / 0.08);
+    --shadow-card-hover: 0 8px 30px -8px hsl(30 15% 50% / 0.15);
+
+    /* Transitions */
+    --transition-smooth: 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
+    --transition-spring: 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+    /* Gradients */
+    --gradient-gold: linear-gradient(135deg, hsl(38 55% 58%), hsl(42 50% 68%));
+    --gradient-hero-overlay: linear-gradient(180deg, hsl(0 0% 0% / 0.55) 0%, hsl(0 0% 0% / 0.35) 50%, hsl(0 0% 0% / 0.6) 100%);
+    --gradient-pandora: linear-gradient(135deg, hsl(340 30% 55% / 0.06), hsl(340 40% 96% / 0.5));
+    --gradient-warm-section: linear-gradient(180deg, hsl(40 33% 99%), hsl(35 15% 95%));
+  }
+
+  .dark {
+    --primary: 40 20% 97%;
+    --primary-foreground: 0 0% 8%;
+    --background: 0 0% 5%;
+    --foreground: 40 20% 95%;
+    --card: 0 0% 8%;
+    --card-foreground: 40 20% 95%;
+    --popover: 0 0% 8%;
+    --popover-foreground: 40 20% 95%;
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 40 20% 95%;
+    --muted: 0 0% 14%;
+    --muted-foreground: 30 10% 60%;
+    --accent: 38 50% 52%;
+    --accent-foreground: 0 0% 100%;
+    --border: 0 0% 18%;
+    --input: 0 0% 18%;
+    --ring: 38 50% 52%;
+    --gold: 38 50% 52%;
+    --gold-light: 38 35% 28%;
+    --gold-dark: 38 45% 42%;
+    --gold-muted: 38 15% 35%;
+    --pandora: 340 30% 50%;
+    --pandora-light: 340 20% 12%;
+    --pandora-foreground: 0 0% 100%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 98%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Manrope', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--secondary));
+  }
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--gold-muted));
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--gold));
+  }
+}
+
+@layer base {
+  [data-debug-wrapper="true"] {
+    display: contents !important;
+  }
+  [data-debug-wrapper="true"] > * {
+    margin-left: inherit;
+    margin-right: inherit;
+    margin-top: inherit;
+    margin-bottom: inherit;
+    padding-left: inherit;
+    padding-right: inherit;
+    padding-top: inherit;
+    padding-bottom: inherit;
+    column-gap: inherit;
+    row-gap: inherit;
+    gap: inherit;
+    border-left-width: inherit;
+    border-right-width: inherit;
+    border-top-width: inherit;
+    border-bottom-width: inherit;
+    border-left-style: inherit;
+    border-right-style: inherit;
+    border-top-style: inherit;
+    border-bottom-style: inherit;
+    border-left-color: inherit;
+    border-right-color: inherit;
+    border-top-color: inherit;
+    border-bottom-color: inherit;
+  }
+}
+
+@layer utilities {
+  /* Luxury font utilities */
+  .font-serif-display {
+    font-family: 'Playfair Display', serif;
+  }
+  .font-sans-body {
+    font-family: 'Manrope', sans-serif;
+  }
+
+  /* Gold underline decoration */
+  .underline-gold {
+    text-decoration: underline;
+    text-decoration-color: hsl(var(--gold));
+    text-underline-offset: 6px;
+    text-decoration-thickness: 2px;
+  }
+
+  /* Luxury image overlay */
+  .overlay-luxury::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--gradient-hero-overlay);
+    z-index: 1;
+  }
+
+  /* Gold accent line */
+  .accent-line-gold::after {
+    content: '';
+    display: block;
+    width: 48px;
+    height: 2px;
+    background: var(--gradient-gold);
+    margin-top: 16px;
+  }
+
+  .accent-line-gold-center::after {
+    content: '';
+    display: block;
+    width: 48px;
+    height: 2px;
+    background: var(--gradient-gold);
+    margin-top: 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
