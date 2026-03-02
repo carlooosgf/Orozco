@@ -49,7 +49,6 @@ export const Footer = () => {
             </h4>
             <ul className="space-y-2.5">
               {[
-                "Taller Propio",
                 "Reparación de Relojes",
                 "Joyas a Medida",
                 "Tasación de Oro",

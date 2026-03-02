@@ -17,7 +17,7 @@ const categories = [
   },
   {
     title: "Joyas a Medida",
-    description: "Piezas únicas creadas en nuestro taller propio",
+    description: "Piezas únicas diseñadas para ti con los mejores materiales",
     image: "https://images.unsplash.com/photo-1605100804567-1ffe942b5cd6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwxfHxmaW5lJTIwamV3ZWxyeXxlbnwwfHx8fDE3NzI0NjU3MTB8MA&ixlib=rb-4.1.0&q=85&w=600",
     span: "md:col-span-1",
   },

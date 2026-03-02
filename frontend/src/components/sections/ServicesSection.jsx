@@ -1,13 +1,8 @@
 import { motion } from "framer-motion";
-import { Wrench, Watch, UserCheck, Gem } from "lucide-react";
+import { Watch, UserCheck, Gem } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 const services = [
-  {
-    icon: Wrench,
-    title: "Taller Propio",
-    description: "Contamos con un taller artesanal donde nuestros maestros joyeros dan vida a piezas únicas y realizan las reparaciones más exigentes.",
-  },
   {
     icon: Watch,
     title: "Reparación de Relojes",
@@ -74,7 +69,7 @@ export const ServicesSection = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-60px" }}
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8"
+          className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8"
         >
           {services.map((service) => {
             const Icon = service.icon;
