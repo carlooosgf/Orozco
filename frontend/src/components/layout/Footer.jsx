@@ -50,7 +50,7 @@ export const Footer = () => {
             <ul className="space-y-2.5">
               {[
                 "Reparación de Relojes",
-                "Joyas a Medida",
+                "Alianzas de Boda",
                 "Tasación de Oro",
                 "Asesoramiento",
               ].map((item) => (

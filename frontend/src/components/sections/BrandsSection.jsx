@@ -16,16 +16,10 @@ const categories = [
     span: "md:col-span-1",
   },
   {
-    title: "Joyas a Medida",
-    description: "Piezas únicas diseñadas para ti con los mejores materiales",
-    image: "https://images.unsplash.com/photo-1605100804567-1ffe942b5cd6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NjZ8MHwxfHNlYXJjaHwxfHxmaW5lJTIwamV3ZWxyeXxlbnwwfHx8fDE3NzI0NjU3MTB8MA&ixlib=rb-4.1.0&q=85&w=600",
-    span: "md:col-span-1",
-  },
-  {
     title: "Alianzas de Boda",
     description: "El símbolo perfecto para vuestra historia de amor",
     image: "https://images.unsplash.com/photo-1606800052052-a08af7148866?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzOTB8MHwxfHNlYXJjaHwxfHx3ZWRkaW5nJTIwcmluZ3N8ZW58MHx8fHwxNzcyNDY1Njc3fDA&ixlib=rb-4.1.0&q=85&w=800",
-    span: "md:col-span-2",
+    span: "md:col-span-1",
   },
 ];
 
