@@ -16,14 +16,14 @@ export const PandoraSection = () => {
       <div className="absolute bottom-10 left-10 w-48 h-48 rounded-full bg-pandora/5 blur-3xl" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
           {/* Content */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="order-2 lg:order-1"
+            className="order-2 lg:order-1 relative z-10"
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-pandora/10 text-pandora mb-6">
               <Sparkles className="w-3.5 h-3.5" />
@@ -46,7 +46,7 @@ export const PandoraSection = () => {
               Como distribuidores oficiales, te garantizamos autenticidad, las últimas novedades y asesoramiento personalizado para encontrar la pieza perfecta.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row lg:flex-col xl:flex-row gap-4">
               <Button
                 variant="pandora"
                 size="lg"
@@ -81,7 +81,7 @@ export const PandoraSection = () => {
             <div className="relative">
               {/* Decorative border */}
               <div className="absolute -inset-3 sm:-inset-4 border border-pandora/15 rounded-xl" />
-              <div className="relative overflow-hidden rounded-lg aspect-[4/5] sm:aspect-[3/4]">
+              <div className="relative overflow-hidden rounded-lg aspect-[3/2] sm:aspect-[4/3] lg:aspect-[3/4] max-h-[420px] lg:max-h-none">
                 <img
                   src={PANDORA_IMAGE}
                   alt="Colección Pandora en Joyerías Orozco"
